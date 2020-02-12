@@ -8,3 +8,5 @@ git add .
 git commit -m "mensaje"
 
 git push
+
+git pull
