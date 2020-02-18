@@ -10,6 +10,8 @@ de no ser igual se debe informar si “falta…”  para llegar al número secre
 var numeroSecreto; 
 var contadorIntentos;
 var ingresado;
+contadorIntentos=0
+contadorIntentos=parseInt(contadorIntentos);
 
 
 
@@ -25,12 +27,14 @@ function comenzar()
 function verificar()
 {
 	ingresado=document.getElementById('numero').value;
-	contadorIntentos=document.getElementById('intentos').value;
+	
 	console.log(contadorIntentos);
+	contadorIntentos=contadorIntentos+1;
 	
 	if(numeroSecreto==ingresado)
 	{
-		alert("Usted es un ganador!!! y en solo"+ contadorIntentos );
+		
+		alert("Usted es un ganador!!! y en solo "+ contadorIntentos + " intetos " );
 	}
 	else
 	{
@@ -38,9 +42,11 @@ function verificar()
 		{
 			alert(" Falta ");
 		}
+			
 		else
 		{
-			alert( " Se Paso ");
+			alert( " Se Paso ");		
 		}
 	}
+	document.getElementById('intentos').value=contadorIntentos;
 }
