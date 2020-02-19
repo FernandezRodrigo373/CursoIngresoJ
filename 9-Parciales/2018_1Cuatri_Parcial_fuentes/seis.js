@@ -4,6 +4,7 @@ function mostrar()
 
 	hora=document.getElementById('laHora').value;
 	hora=parseInt(hora);
+	
 
 	switch(hora)
 	{
@@ -36,20 +37,16 @@ function mostrar()
 		case 3:
 		case 4:
 		case 5:
-			alert("es de noche");
+			alert("es de noche");	
+		if(hora<25)
+		{			
+			alert("a dormir");	
+		}
 			break;
 		default:
 			alert("hora no valida");
-			break;			
-	}
-
-	if(hora<6||hora>19)
-	{
-		if(hora>0)
-		{
-			alert("a dormir");
-		}
-	}
+			break;	
+	}	
 }
 
 
