@@ -5,10 +5,10 @@ function mostrar()
 	var acumulador=0;
 	var ingresado;
 
-	while(isNaN(ingresado)||contador<5)
+	while(isNaN(ingresado) || contador<5)
 	{
 		ingresado=prompt("ingrese numero");
-		ingresado=parseInt(ingresado);
+		ingresado=parseInt(ingresado);		
 
 		contador=contador+1;
 		acumulador=acumulador+ingresado;
