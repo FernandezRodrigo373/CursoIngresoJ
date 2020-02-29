@@ -1,18 +1,17 @@
 function mostrar()
 {
-	var repeticiones;
 	var numero;
 
-	
-	repeticiones=prompt("ingrese numero ");
-	repeticiones=parseInt(repeticiones);
+	numero=prompt("ingrese numero");
 	numero=parseInt(numero);
 
-	for(numero=0;numero;)
+	for(numero=0;numero!=9;numero++)
+	{
+		numero=prompt("ingrese numero");
 
-
-
-
-
-
-}//FIN DE LA FUNCIÓN
+		if(numero==9)
+		{
+			break;
+		}
+	}		
+}//FIN DE LA FUNCIÓNingresado
