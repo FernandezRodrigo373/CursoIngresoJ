@@ -21,7 +21,7 @@ function mostrar()
 
 	switch(continente)
 	{
-		case "America":
+		case "América":
 			descuento=50;
 
 			switch(medioDePago)
